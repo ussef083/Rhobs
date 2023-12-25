@@ -48,7 +48,7 @@ const NewTask = () => {
 
                 <div className={styles.group}>
                   <label>Gravity &#40; &#60; {gravityValue} &#41;</label>
-                  <input type="range" {...register('gravityValue')} min="0" step={0.01} max="25" defaultValue="5" className={styles.select}/>
+                  <input type="range" {...register('gravityValue')} min="0" step={0.01} max="25" defaultValue="10" className={styles.select}/>
                 </div>
 
           <div className={styles.group}>
