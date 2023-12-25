@@ -7,7 +7,7 @@ const NewTask = () => {
 
   const { register, watch } = useForm({
     defaultValues: {
-      gravityValue: 0,
+      gravityValue: 10,
       isPlanetChecked: false
     }
   }); 
