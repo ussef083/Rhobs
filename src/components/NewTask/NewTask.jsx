@@ -19,9 +19,7 @@ const NewTask = () => {
 
 
   useEffect(() => {
-      const fetchBodies = async () => {
-          console.log(isPlanetChecked,gravityValue)
-  
+      const fetchBodies = async () => {  
           const res = await fetch(`https://api.le-systeme-solaire.net/rest.php/bodies?filter[]=isPlanet,eq,${isPlanetChecked}&filter[]=gravity,lt,${gravityValue}`);
           const data = await res.json();
           setBodies(data.bodies);
