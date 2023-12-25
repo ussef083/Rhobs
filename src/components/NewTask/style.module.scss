@@ -1,0 +1,93 @@
+.wrapper{
+    position: relative;
+    box-sizing: border-box;
+}
+.newTask{
+    box-sizing: border-box;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-backdrop-filter: blur(60px) brightness(100%);
+    backdrop-filter: blur(10px) brightness(100%);
+    background-color: #ffffff03;
+    border-radius: 20px;
+    box-shadow: inset 0px 1px 40px #447b8c33, inset 0px 4px 18px #447b8c40, inset 50px 98px 100px -48px #447b8c40,
+      inset 0px -82px 68px -64px #447b8c40, inset -82px 0px 68px -64px #447b8c40, inset 0px 4px 4px #00000040,
+      inset 0px 7px 11px -4px #7dddfb, inset 0px 39px 56px -36px #a9c5fd80;
+
+    padding: 40px;
+    max-width: 500px;
+    margin: 50px auto 100px;
+    color: #C5EEFF;
+    gap: 20px;
+    z-index: 4;
+    position: relative;
+
+
+    .group{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        .select{
+            background-color: #C5EEFF;
+            outline: none;
+            border: 2px solid #C5EEFF;
+            padding: 5px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            color: #0a4158;
+            font-family: 'Inter';
+        }
+
+    }
+    .info{
+        p{
+            margin: 5px;
+        }
+        .nodata{
+            text-align: center;
+            font-size: 14px;
+            .SecondImg{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+.NewTaskTitle{
+    position: absolute;
+    z-index: 3;
+    margin: 0px auto;
+    text-align: center;
+    width: 100%;
+    font-size: calc(20px + 13vw);
+    bottom: -100px;
+    font-family: 'Inter';
+    font-weight: 700;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(
+      180deg,
+      rgb(91.9, 170.52, 204.21) 0%,
+      rgba(215.83, 239.78, 250.04, 0.5) 99.99%,
+      rgb(93.74, 141.92, 162.56) 100%
+    );
+    background-clip: text;
+    color: transparent;
+}
+
+@media screen and (max-width: 900px) {
+    .NewTaskTitle{
+        bottom: -50px;
+    }
+  }
+    
+
+  @media screen and (max-width: 500px) {
+    .NewTaskTitle{
+        bottom: -30px;
+        font-size: 17vw;
+    }
+  }

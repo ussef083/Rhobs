@@ -1,0 +1,12 @@
+.App{
+  background-color: #131313;
+  min-height: 100vh;
+  box-sizing: border-box;
+  z-index: 0;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+}
